@@ -43,7 +43,7 @@ export const ABOUT = {
     { value: "10+", label: "Years Experience" },
     { value: "90+", label: "Performance Score" },
   ] as Stat[],
-  imageAlt: "Professional portrait of Everton Freitas",
+  imageAlt: "Everton Freitas — Senior Full Stack Engineer",
 };
 
 export const EXPERIENCES: Experience[] = [
@@ -166,36 +166,39 @@ export const PROJECTS: Project[] = [
   {
     id: "buscape-refactor",
     number: "01",
-    title: "Buscapé Refactor",
+    title: "Search Refactor — Buscapé",
     description:
-      "End-to-end refactor of the search results page. Optimized TTI and LCP significantly.",
+      "End-to-end refactor of the search results page at Brazil's largest price comparison platform. Ran continuous A/B tests, optimized rendering strategies, and significantly reduced TTI and LCP on a product with millions of monthly visits.",
+    stack: ["React", "Next.js", "TypeScript", "Node.js"],
     metric: "+30%",
     metricLabel: "Conversion KPI",
   },
   {
     id: "maquiadoro-ds",
     number: "02",
-    title: "MaquiADORO DS",
+    title: "Design System — MaquiADORO",
     description:
-      "Architected a scalable Design System focused on lighthouse performance and reusability.",
+      "Full redesign of a cosmetics e-commerce design system with a mobile-first approach. Rebuilt all components with SCSS, reusable mixins and adaptive loading, directly impacting mobile conversion rates.",
+    stack: ["React", "SCSS", "Mobile-first"],
     metric: "60 → 94",
     metricLabel: "PageSpeed",
   },
   {
     id: "luizalabs-agency",
     number: "03",
-    title: "Luizalabs Agency",
+    title: "Agency System — Luizalabs",
     description:
-      "Centralized internal system managing agency operations for one of Brazil's retail giants.",
-    metric: "Enterprise",
-    metricLabel: "Scale",
+      "Led the replacement of a manual Google Forms process with a purpose-built application for returns logistics. Integrated AI-powered address validation + Maps API and maintained 100% test coverage from design doc to deploy.",
+    stack: ["React", "Next.js", "Node.js", "NestJS"],
+    metric: "300+",
+    metricLabel: "Applications in week 1",
   },
 ];
 
 export const CONTACT = {
-  title: "Let's build the",
-  titleHighlight: "future",
-  subtitle: "Open for strategic consultations and high-impact projects.",
+  title: "Let's work",
+  titleHighlight: "together",
+  subtitle: "Available for Senior Full Stack / Frontend roles — Remote. Open to high-impact projects on high-traffic digital products.",
   email: "everton7fr@gmail.com",
   phone: "+55 85 92163-0442",
   formLabels: {

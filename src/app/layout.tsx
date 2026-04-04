@@ -9,7 +9,7 @@ const inter = Inter({
   weight: ["100", "300", "400", "500", "700"],
 });
 
-const SITE_URL = "https://evertonfreitas.dev";
+const SITE_URL = "https://everton7fr.space";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -18,16 +18,19 @@ export const metadata: Metadata = {
     template: "%s | Everton Freitas",
   },
   description:
-    "Senior Full Stack Engineer with 10+ years building high-performance web products. Expert in React, Next.js, TypeScript, Node.js, AI integrations, CRO and Core Web Vitals. Open for consulting.",
+    "Everton Freitas — Senior Full Stack Engineer com 10+ anos de experiência em React, Next.js, TypeScript e Node.js. Especialista em Web Performance, CRO e IA aplicada. Disponível para oportunidades remotas como Full Stack / Frontend Sênior.",
   keywords: [
     "Everton Freitas",
     "Senior Full Stack Engineer",
     "Engenheiro Full Stack Sênior",
+    "Frontend Engineer Sênior",
     "React Developer",
     "Next.js Developer",
     "TypeScript Engineer",
     "Node.js Developer",
     "Frontend Engineer Brasil",
+    "Full Stack Remote",
+    "Senior Developer Remote",
     "Web Performance",
     "Core Web Vitals",
     "CRO",
@@ -48,6 +51,8 @@ export const metadata: Metadata = {
     "Tailwind CSS",
     "freelancer frontend brazil",
     "software engineer portfolio",
+    "vaga frontend remoto",
+    "desenvolvedor full stack remoto",
   ],
   authors: [{ name: "Everton Freitas", url: SITE_URL }],
   creator: "Everton Freitas",
@@ -63,7 +68,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Everton Freitas | Senior Full Stack Engineer",
     description:
-      "10+ years building high-performance web products. React, Next.js, TypeScript, Node.js, AI integrations, CRO.",
+      "10+ anos construindo produtos digitais de alto tráfego. Especialista em Performance, CRO e IA aplicada. Disponível para oportunidades remotas.",
     url: SITE_URL,
     siteName: "Everton Freitas Portfolio",
     type: "website",
@@ -82,7 +87,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Everton Freitas | Senior Full Stack Engineer",
     description:
-      "10+ years building high-performance web products. React, Next.js, TypeScript, AI integrations.",
+      "10+ anos em produtos digitais de alto tráfego. React, Next.js, TypeScript, IA. Disponível para vagas remotas.",
     creator: "@evertonfreitas",
     images: ["/og-image.png"],
   },
@@ -114,9 +119,15 @@ export default function RootLayout({
     alternateName: "Everton Fr.",
     jobTitle: "Senior Full Stack Engineer",
     description:
-      "Senior Full Stack Engineer with 10+ years building high-performance web products in React, Next.js, TypeScript, Node.js, Python and Go. Specialist in Web Performance, CRO, AI integrations and Micro-frontends.",
+      "Senior Full Stack Engineer with 10+ years building high-performance web products in React, Next.js, TypeScript, Node.js, Python and Go. Specialist in Web Performance, CRO, AI integrations and Micro-frontends. Available for remote Senior Full Stack / Frontend roles.",
     url: SITE_URL,
     nationality: "Brazilian",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Fortaleza",
+      addressRegion: "CE",
+      addressCountry: "BR",
+    },
     image: `${SITE_URL}/images/profile.png`,
     sameAs: [
       "https://linkedin.com/in/evertonfr7",

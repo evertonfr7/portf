@@ -43,7 +43,7 @@ export const ABOUT = {
     { value: "10+", label: "Anos de Experiência" },
     { value: "90+", label: "Score de Performance" },
   ] as Stat[],
-  imageAlt: "Retrato profissional de Everton Freitas",
+  imageAlt: "Everton Freitas — Engenheiro Full Stack Sênior",
 };
 
 export const EXPERIENCES: Experience[] = [
@@ -166,36 +166,39 @@ export const PROJECTS: Project[] = [
   {
     id: "buscape-refactor",
     number: "01",
-    title: "Refator Buscapé",
+    title: "Refatoração da Busca — Buscapé",
     description:
-      "Refator ponta-a-ponta da página de resultados de busca. Otimizei TTI e LCP significativamente.",
+      "Refatoração ponta-a-ponta da página de resultados de busca do maior comparador de preços do Brasil. Implementei testes A/B contínuos, otimizei estratégias de renderização e reduzi TTI e LCP significativamente em um produto com milhões de acessos mensais.",
+    stack: ["React", "Next.js", "TypeScript", "Node.js"],
     metric: "+30%",
     metricLabel: "KPI de Conversão",
   },
   {
     id: "maquiadoro-ds",
     number: "02",
-    title: "Design System MaquiADORO",
+    title: "Design System — MaquiADORO",
     description:
-      "Arquitetei um Design System escalável focado em performance lighthouse e reusabilidade.",
+      "Refatoração completa do design system de um e-commerce de cosméticos com abordagem mobile-first. Redesenhei todos os componentes com SCSS, mixins reutilizáveis e carregamento adaptativo, impactando diretamente a conversão mobile.",
+    stack: ["React", "SCSS", "Mobile-first"],
     metric: "60 → 94",
     metricLabel: "PageSpeed",
   },
   {
     id: "luizalabs-agency",
     number: "03",
-    title: "Agência Luizalabs",
+    title: "Sistema de Agências — Luizalabs",
     description:
-      "Sistema interno centralizado gerenciando operações de agência para um dos gigantes de varejo do Brasil.",
-    metric: "Enterprise",
-    metricLabel: "Escala",
+      "Liderei a substituição de um processo manual via Google Forms por uma aplicação própria para logística de devoluções. Integrei validação de endereços com IA + Maps API e mantive 100% de cobertura de testes do design doc ao deploy.",
+    stack: ["React", "Next.js", "Node.js", "NestJS"],
+    metric: "300+",
+    metricLabel: "Candidaturas na 1ª semana",
   },
 ];
 
 export const CONTACT = {
-  title: "Vamos construir o",
-  titleHighlight: "futuro",
-  subtitle: "Aberto para consultorias estratégicas e projetos de alto impacto.",
+  title: "Vamos trabalhar",
+  titleHighlight: "juntos",
+  subtitle: "Disponível para oportunidades como Full Stack / Frontend Sênior — Remoto. Aberto a projetos de alto impacto em produtos digitais de alto tráfego.",
   email: "everton7fr@gmail.com",
   phone: "+55 85 92163-0442",
   formLabels: {

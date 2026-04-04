@@ -18,6 +18,7 @@ export interface Project {
   number: string;
   title: string;
   description: string;
+  stack?: string[];
   metric: string;
   metricLabel: string;
 }

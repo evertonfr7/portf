@@ -1,5 +1,6 @@
 "use client";
 
+import { PillBadge } from "@/components/ui/pill-badge";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { useLocale } from "@/context/locale";
 import { getTranslations } from "@/lib/i18n";
@@ -21,7 +22,7 @@ export function ProjectsContent() {
         {PROJECTS.map((project) => (
           <div
             key={project.id}
-            className="group relative liquid-glass ghost-border rounded-xl p-8 transition-all hover:scale-[1.02]"
+            className="group relative liquid-glass ghost-border rounded-xl p-8 transition-all hover:scale-[1.02] hover:bg-white/[0.07] hover:shadow-[0_8px_40px_rgba(130,130,255,0.12)]"
           >
             <div className="h-1 bg-gradient-primary w-0 group-hover:w-full transition-all duration-500 absolute top-0 left-0 rounded-t-xl" />
 
@@ -29,13 +30,25 @@ export function ProjectsContent() {
               {project.number}
             </div>
 
-            <h3 className="text-2xl font-light mb-4">{project.title}</h3>
+            <h3 className="text-xl font-light mb-4 leading-snug">
+              {project.title}
+            </h3>
 
-            <p className="text-on-surface-variant font-light mb-8">
+            <p className="text-on-surface-variant font-light mb-6 text-sm leading-relaxed">
               {project.description}
             </p>
 
-            <div className="flex items-center gap-4 text-primary">
+            {project.stack && project.stack.length > 0 && (
+              <div className="flex flex-wrap gap-2 mb-8">
+                {project.stack.map((tech) => (
+                  <PillBadge key={tech} className="!px-3 !py-1 !text-xs text-slate-400">
+                    {tech}
+                  </PillBadge>
+                ))}
+              </div>
+            )}
+
+            <div className="flex items-center gap-4 text-primary mt-auto">
               <span className="text-3xl font-light">{project.metric}</span>
               <span className="uppercase text-[0.6rem] tracking-widest text-slate-500">
                 {project.metricLabel}
