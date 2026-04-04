@@ -16,15 +16,23 @@ export function ContactContent() {
     message: "",
   });
 
+  const MAX_NAME_LENGTH = 100;
+  const MAX_MESSAGE_LENGTH = 1000;
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
+    const name = formData.name.trim().slice(0, MAX_NAME_LENGTH);
+    const message = formData.message.trim().slice(0, MAX_MESSAGE_LENGTH);
+
+    if (!name || !message) return;
+
     const phone = CONTACT.phone.replace(/\D/g, "");
-    const message = encodeURIComponent(
-      `*Nome:* ${formData.name}\n\n*Mensagem:*\n${formData.message}`
+    const text = encodeURIComponent(
+      `*Nome:* ${name}\n\n*Mensagem:*\n${message}`
     );
 
-    window.open(`https://wa.me/${phone}?text=${message}`, "_blank");
+    window.open(`https://wa.me/${phone}?text=${text}`, "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -81,6 +89,7 @@ export function ContactContent() {
                   setFormData({ ...formData, name: e.target.value })
                 }
                 required
+                maxLength={100}
                 className="w-full bg-transparent border-0 border-b border-outline-variant focus:border-secondary focus:ring-0 transition-all px-0 py-2 placeholder:text-slate-700 text-white"
               />
             </div>
@@ -97,6 +106,7 @@ export function ContactContent() {
                   setFormData({ ...formData, message: e.target.value })
                 }
                 required
+                maxLength={1000}
                 className="w-full bg-transparent border-0 border-b border-outline-variant focus:border-secondary focus:ring-0 transition-all px-0 py-2 placeholder:text-slate-700 resize-none text-white"
               />
             </div>

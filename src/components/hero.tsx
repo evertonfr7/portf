@@ -11,7 +11,7 @@ export function Hero() {
   const { HERO, SOCIAL_LINKS, CV_FILE } = translations;
 
   const handleDownloadCV = () => {
-    window.open(CV_FILE, "_blank");
+    window.open(CV_FILE, "_blank", "noopener,noreferrer");
   };
 
   return (

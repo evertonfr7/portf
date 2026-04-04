@@ -93,17 +93,17 @@ export function Navbar() {
       </div>
 
       {isMenuOpen && (
-        <div className="absolute top-full mt-4 left-0 right-0 md:hidden">
-          <div className="liquid-glass ghost-border rounded-xl p-6 flex flex-col gap-4">
+        <div className="absolute top-full mt-4 left-0 right-0 md:hidden z-[100]">
+          <div className="rounded-xl p-6 flex flex-col gap-4 bg-[#0d0d1a]/95 backdrop-blur-xl border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.6)]">
             {NAV_ITEMS.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
                 onClick={() => setIsMenuOpen(false)}
-                className={`transition-colors ${
+                className={`text-base transition-colors py-1 ${
                   activeSection === item.href.substring(1)
                     ? "text-primary font-medium"
-                    : "text-slate-400 hover:text-white"
+                    : "text-slate-200 hover:text-white"
                 }`}
               >
                 {item.label}

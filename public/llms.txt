@@ -1,0 +1,64 @@
+# Everton Freitas — Senior Full Stack Engineer
+
+> Personal portfolio of Everton Freitas, a Senior Full Stack Engineer with 10+ years of experience building high-performance web products.
+
+## About
+
+Everton Freitas is a Brazilian software engineer specializing in frontend-heavy full stack development. He has worked at Luizalabs (Magazine Luiza), Kirvano, Mosaico/Buscapé and MaquiADORO. His core expertise spans React, Next.js, TypeScript, Node.js, Python and Go — with a strong focus on Web Performance, CRO (Conversion Rate Optimization), AI integrations and Micro-frontends.
+
+- Location: Brazil
+- Experience: 10+ years
+- Education: Computer Engineering, Universidade Federal do Ceará (UFC)
+- Contact: https://everton7fr.space/#contact
+- LinkedIn: https://linkedin.com/in/evertonfr7
+- GitHub: https://github.com/evertonfr7
+
+## Skills
+
+**Front-end:** React, Next.js, TypeScript, JavaScript, HTML & CSS, Tailwind CSS, Vite, Material UI, shadcn/ui, Three.js
+
+**Back-end:** Node.js, NestJS, Express, Python, Go, Django, Flask, Socket.IO, GraphQL, PostgreSQL, MongoDB, SQL, Prisma
+
+**Infrastructure:** Docker, Kubernetes, AWS, Terraform, GitHub Actions, GitLab Pipelines, CI/CD, Firebase, Nginx
+
+**Observability:** Datadog, New Relic, Grafana, Google Analytics, Unleash
+
+**AI & Productivity:** Spec-Driven Design, MCP Servers, AI-first workflows, Applied AI, Jupyter, Conda
+
+**Quality & Architecture:** Core Web Vitals, A/B Testing, Unit Tests, Jest, Vitest, React Testing Library, Playwright, Micro-frontends, Accessibility (a11y), SonarQube, Scrum
+
+## Work Experience
+
+### Luizalabs (Feb 2025 – Apr 2026)
+Senior Full Stack Engineer at the tech arm of Magazine Luiza, one of Brazil's largest retailers.
+- Rebuilt the agency returns front-end — 300+ applications in the first launch week
+- Developed AI-integrated admin module for candidate validation, reducing manual effort
+- Introduced Spec-Driven Design and AI-first flows, accelerating dev cycles
+
+### Kirvano (Nov 2023 – Dec 2024)
+Frontend Engineer at a high-growth checkout platform.
+- Drove +50% revenue growth through frontend improvements on the checkout flow
+- Integrated AI-powered features across product journeys
+- Implemented observability dashboards and feature flags at scale
+
+### Mosaico / Buscapé (Nov 2021 – Nov 2023)
+Frontend Engineer at Brazil's largest price comparison platform.
+- Led full refactor of the search results page, improving conversion KPIs by 30%
+- Reduced page load time from 4s to 1.2s through SSR optimization
+- Built micro-frontend architecture serving millions of users
+
+### MaquiADORO (Jun 2018 – Nov 2021)
+Frontend Developer at a beauty e-commerce company.
+- Elevated PageSpeed from 60 to 94 on mobile and desktop (57% improvement)
+- Engineered a custom Design System from scratch
+- Built an auditable internal financial system, increasing team productivity by 40%
+
+## Notable Projects
+
+- **Buscapé Refactor:** End-to-end refactor of the search results page. +30% conversion KPI.
+- **MaquiADORO Design System:** Scalable component library. PageSpeed 60 → 94.
+- **Luizalabs Agency System:** Centralized internal system managing agency operations for a major Brazilian retailer.
+
+## Availability
+
+Open for strategic consulting and high-impact projects.

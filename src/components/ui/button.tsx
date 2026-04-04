@@ -30,8 +30,14 @@ export function Button({
   const classes = `${baseClasses} ${variantClasses[variant]} ${className}`;
 
   if (href) {
+    const isSafe =
+      href.startsWith("/") ||
+      href.startsWith("#") ||
+      href.startsWith("https://") ||
+      href.startsWith("http://");
+    const safeHref = isSafe ? href : "#";
     return (
-      <a href={href} className={classes}>
+      <a href={safeHref} className={classes}>
         {children}
       </a>
     );
