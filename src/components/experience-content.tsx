@@ -31,15 +31,26 @@ export function ExperienceContent() {
                   {exp.period}
                 </span>
                 <h3 className="text-2xl font-light text-white">{exp.company}</h3>
+                <p className="text-on-surface-variant text-sm mt-1 font-light">{exp.role}</p>
               </div>
 
               <GlassCard
                 hover
                 className={exp.isLeft ? "mt-4 md:mt-0" : "mt-4 md:mt-0 order-1"}
               >
-                <p className="text-on-surface-variant font-light">
+                <p className="text-on-surface-variant font-light mb-3">
                   {exp.description}
                 </p>
+                {exp.highlights && exp.highlights.length > 0 && (
+                  <ul className="space-y-1.5">
+                    {exp.highlights.map((item, i) => (
+                      <li key={i} className="flex items-start gap-2 text-sm text-on-surface-variant/80">
+                        <span className="text-primary mt-0.5 shrink-0">▸</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </GlassCard>
             </div>
           </div>

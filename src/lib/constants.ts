@@ -1,7 +1,6 @@
 import {
   Experience,
   Project,
-  Skill,
   SocialLink,
   NavItem,
   Stat,
@@ -51,6 +50,7 @@ export const EXPERIENCES: Experience[] = [
     id: "luizalabs",
     period: "fev 2025 — abr 2026",
     company: "Luizalabs",
+    role: "Senior Frontend Engineer",
     description:
       "Liderando arquitetura para sistemas internos de agência e squads de e-commerce performance. Escalando micro-frontends baseados em React.",
     isLeft: true,
@@ -59,6 +59,7 @@ export const EXPERIENCES: Experience[] = [
     id: "kirvano",
     period: "nov 2023 — dez 2024",
     company: "Kirvano",
+    role: "Frontend Engineer",
     description:
       "Desenvolvedor central para plataforma de checkout em alto crescimento. Implementação de fluxos de pagamento focados em performance e integrações com IA.",
     isLeft: false,
@@ -67,6 +68,7 @@ export const EXPERIENCES: Experience[] = [
     id: "buscape",
     period: "nov 2021 — nov 2023",
     company: "Mosaico / Buscapé",
+    role: "Frontend Engineer",
     description:
       "Liderei refator dos resultados de busca, melhorando métricas-chave de conversão em 30% através de otimização extrema de React e ajuste de SSR.",
     isLeft: true,
@@ -75,24 +77,13 @@ export const EXPERIENCES: Experience[] = [
     id: "maquiadoro",
     period: "jun 2018 — nov 2021",
     company: "MaquiADORO",
+    role: "Frontend Developer",
     description:
       "Engenharia de Design System customizado e migração de stack legado para JS moderno, alcançando scores de PageSpeed acima de 90.",
     isLeft: false,
   },
 ];
 
-export const SKILLS: Skill[] = [
-  { name: "React" },
-  { name: "Next.js" },
-  { name: "TypeScript" },
-  { name: "Node.js" },
-  { name: "Web Performance" },
-  { name: "CRO & A/B Testing" },
-  { name: "AI Integrations" },
-  { name: "Micro-frontends" },
-  { name: "AWS" },
-  { name: "Tailwind CSS" },
-];
 
 export const PROJECTS: Project[] = [
   {

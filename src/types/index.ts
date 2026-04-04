@@ -2,12 +2,15 @@ export interface Experience {
   id: string;
   period: string;
   company: string;
+  role: string;
   description: string;
+  highlights?: string[];
   isLeft?: boolean;
 }
 
 export interface Skill {
   name: string;
+  category: string;
 }
 
 export interface Project {
