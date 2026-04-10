@@ -221,4 +221,4 @@ export const SECTION_HEADINGS = {
 };
 
 export const PROFILE_IMAGE = "/images/profile.png";
-export const CV_FILE = "/everton-freitas-cv.pdf";
+export const CV_FILE: string = "/cv_everton_freitas_pt.pdf";

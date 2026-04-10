@@ -135,4 +135,4 @@ export const FOOTER = {
 };
 
 export const PROFILE_IMAGE = "/images/profile.png";
-export const CV_FILE = "/everton-freitas-cv.pdf";
+export const CV_FILE = "/cv_everton_freitas_en.pdf";
